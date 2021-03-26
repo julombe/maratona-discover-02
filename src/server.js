@@ -7,7 +7,8 @@ const routes = require("./routes")
 server.use(express.static('public'))
 
 
-
+//routes
+server.use(routes)
 
 
 
