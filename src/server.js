@@ -3,6 +3,7 @@ const server = express()
 
 
 server.use(express.static('public'))
+
 //request, response
 server.get('/', (request, response) => {
     return response.sendFile(__dirname + "/views/index.html")
