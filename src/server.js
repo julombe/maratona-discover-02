@@ -2,6 +2,7 @@ const express = require("express")
 const server = express()
 
 
+// enable css. Static files
 server.use(express.static('public'))
 
 //request, response
