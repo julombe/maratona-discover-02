@@ -4,10 +4,10 @@ const routes = express.Router()
 const basePath = __dirname + "/views"
 
 //request, response. adding routes
-routes.get('/', (request, response) => response.sendFile(basePath + "/index.html"))
-routes.get('/job', (request, response) => response.sendFile(basePath + "/job.html"))
-routes.get('/job/edit', (request, response) => response.sendFile(basePath + "/job-edit.html"))
-routes.get('/profile', (request, response) => response.sendFile(basePath + "/profile.html"))
+routes.get('/', (req, res) => res.sendFile(basePath + "/index.html"))
+routes.get('/job', (req, res) => res.sendFile(basePath + "/job.html"))
+routes.get('/job/edit', (req, res) => res.sendFile(basePath + "/job-edit.html"))
+routes.get('/profile', (req, res) => res.sendFile(basePath + "/profile.html"))
     
 
 
