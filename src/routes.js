@@ -5,9 +5,9 @@ const basePath = __dirname + "/views"
 
 //request, response. adding routes
 routes.get('/', (request, response) => response.sendFile(basePath + "/index.html"))
-routes.get('/', (request, response) => response.sendFile(basePath + "/job.html"))
-routes.get('/', (request, response) => response.sendFile(basePath + "/job-edit.html"))
-routes.get('/', (request, response) => response.sendFile(basePath + "/profile.html"))
+routes.get('/job', (request, response) => response.sendFile(basePath + "/job.html"))
+routes.get('/job/edit', (request, response) => response.sendFile(basePath + "/job-edit.html"))
+routes.get('/profile', (request, response) => response.sendFile(basePath + "/profile.html"))
     
 
 
