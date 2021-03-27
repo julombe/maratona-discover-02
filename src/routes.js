@@ -1,6 +1,7 @@
 const express = require("express")
 const routes = express.Router()
 
+const basePath = __dirname + "views"
 
 //request, response. adding routes
 routes.get('/', (request, response) => {
